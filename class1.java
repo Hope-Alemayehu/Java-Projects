@@ -7,22 +7,20 @@ public class class1{
        System.out.println("How many circle bitch: ");
 
        int n = sc.nextInt ();
-        double radius[]= new double[n];
+         double[] radius= new double[n];
         for (int i=0;i<n;i++){
             System.out.print("Enter radius for the "+ (i+1) +" Circle: ");
             radius[i]=sc.nextInt();
 
         }
 
+        class2 cl2 =new class2();
         for (int i=0;i<n;i++){
-       double area= Math.PI * (radius[i]*radius[i]);
-       System.out.println("Area of circle "+(i+1)+" is "+area);
-
-       double circumference =Math.PI*2*radius[i];
-       System.out.println("circumfrance of the circle "+(i+1)+" is "+circumference);
+            double area=cl2.area(radius[i]);
+            double circumference=cl2.area(radius[i]);
+            cl2.display(i+1, area, circumference);
         }
-
-
+        
 
 
 
